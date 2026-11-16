@@ -105,17 +105,17 @@ The three datasets were processed within Google Earth Engine.
 
 The monthly datasets were combined using their corresponding year and month.
 
-### 6.3 Monthly Climatology and Anomalies
+### **6.3 Monthly Climatology and Anomalies**
 
 Calendar-month climatologies were calculated using the average value for each calendar month across the 2016–2025 study period.
 
 Monthly anomalies were then calculated by subtracting the corresponding calendar-month climatology from each monthly observation.
 
-\[
-\text{Anomaly} = \text{Observed value} - \text{Calendar-month mean}
-\]
+**Anomaly = Observed value − Mean of that calendar month across 2016–2025**
 
 This approach removes the average seasonal pattern and allows the analysis to examine variations relative to the usual conditions for each month.
+
+Each calendar-month climatological mean is based on ten observations, one for each year in the study period.
 
 ### 6.4 Pearson Correlation Analysis
 
