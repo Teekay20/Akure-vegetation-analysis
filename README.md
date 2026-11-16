@@ -8,6 +8,20 @@ This project examines vegetation dynamics in Akure North and Akure South, Ondo S
 
 The analysis was conducted using Google Earth Engine (GEE), with additional statistical calculations and visualisations performed using exported CSV datasets and Python.
 
+Key Findings
+
+Raw monthly NDVI and soil moisture were strongly positively correlated (r = 0.885).
+
+After removing the average seasonal pattern, the NDVI–soil moisture anomaly correlation weakened to r = 0.212.
+
+None of the three primary anomaly correlations passed the Bonferroni-adjusted significance threshold of 0.01667.
+
+Rainfall anomalies showed a weak positive association with NDVI anomalies at a one-month lag (r = 0.239, p = 0.0089), but this did not pass the adjusted significance threshold of 0.00625.
+
+Monthly mean NDVI was lowest in February (approximately 0.444) and highest in July (approximately 0.761).
+
+Rainfall showed relatively high monthly values in June and September, with a decline in July and August.
+
 ## 2. Study Area
 
 The study covers two Local Government Areas (LGAs) in Ondo State, southwestern Nigeria:
