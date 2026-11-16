@@ -158,7 +158,15 @@ Bonferroni correction was applied separately to the three primary anomaly correl
 | Monthly records | 120 |
 | Valid monthly records | 120 |
 
-### 7.2 Raw Monthly Correlations
+### **7.2 Monthly Vegetation and Climate Patterns**
+
+- Monthly mean NDVI varied throughout the study period, with the lowest climatological mean in February (approximately 0.444) and the highest in July (approximately 0.761).
+
+- Rainfall showed seasonal variation, with relatively high monthly values in June and September and a decline during July and August.
+
+- These patterns provide context for interpreting the relationships between vegetation conditions, rainfall, and soil moisture.
+
+### 7.3 Raw Monthly Correlations
 
 The raw monthly data showed positive correlations among all three variables.
 
@@ -172,7 +180,7 @@ NDVI and soil moisture had the strongest raw monthly correlation, followed by ra
 
 However, these correlations include the influence of seasonal patterns shared by the variables.
 
-### 7.3 Seasonality-Adjusted Anomaly Correlations
+### 7.4 Seasonality-Adjusted Anomaly Correlations
 
 After removing the average calendar-month seasonal pattern, the correlations became considerably weaker.
 
@@ -215,23 +223,37 @@ This suggests that shared seasonal variation accounts for an important part of t
 
 The seasonality-adjusted analysis showed weak positive relationships between NDVI anomalies and both rainfall and soil moisture anomalies. However, none of the three primary anomaly correlations passed the Bonferroni-adjusted significance threshold.
 
-The lagged analysis identified a positive relationship between rainfall anomalies and NDVI anomalies at a one-month lag. Nevertheless, this relationship did not pass the adjusted significance threshold for multiple comparisons.
+The lagged analysis identified a weak positive association between rainfall anomalies and NDVI anomalies at a one-month lag. Nevertheless, this relationship did not pass the adjusted significance threshold for multiple comparisons.
 
-These findings suggest that examining seasonal patterns separately from monthly anomalies provides a more cautious understanding of the relationships between vegetation conditions, rainfall, and soil moisture.
+These findings illustrate the importance of examining seasonal patterns separately from monthly anomalies when investigating relationships between vegetation conditions and climatic variables.
 
-## 9. Limitations
+## **9. Limitations**
 
 The following limitations should be considered when interpreting the results:
 
-1. **Spatial resolution:** MODIS, CHIRPS, and ERA5-Land have different spatial resolutions, which may influence comparisons between the datasets.
-2. **Soil moisture estimates:** ERA5-Land provides model-based reanalysis estimates rather than direct field measurements.
-3. **Vegetation index:** NDVI indicates vegetation greenness but does not directly measure crop yield, biomass, or plant health.
-4. **Temporal autocorrelation:** The Pearson correlation p-values do not account for temporal autocorrelation in monthly observations.
-5. **Multiple comparisons:** Bonferroni correction was applied to the primary anomaly correlations and lagged comparisons, but the analysis remains exploratory.
-6. **Spatial aggregation:** Regional mean values may conceal local differences in vegetation, rainfall, and soil moisture within the two LGAs.
-7. **Causation:** Correlation does not establish causation. The observed relationships should not be interpreted as proof that rainfall or soil moisture directly caused changes in NDVI.
+- **Spatial resolution:** MODIS, CHIRPS, and ERA5-Land have different spatial resolutions. The relatively coarse resolution of the climate datasets may limit the representation of local variation within the study area.
 
-## 10. Conclusion
+- **Climate grid representation:** The number of CHIRPS and ERA5-Land grid cells covering the study area is limited compared with the finer-resolution MODIS data. This may influence the spatial detail represented by the regional averages.
+
+- **Mixed land cover:** Regional mean NDVI values combine different land-cover types, potentially including forest, cropland, and built-up areas. These differences may dilute local vegetation responses in the aggregated results.
+
+- **Soil moisture estimates:** ERA5-Land provides model-based reanalysis estimates rather than direct field measurements. Its soil moisture estimates may not fully represent actual field conditions.
+
+- **Seasonal soil moisture variation:** Monthly soil moisture means remain relatively close, approximately 0.39–0.41 m³/m³, from June to October. This limited variation may affect the strength of relationships detected during these months.
+
+- **MODIS compositing:** MODIS MOD13Q1 provides 16-day vegetation index composites. Monthly NDVI values were calculated by grouping available composites according to their start dates. This compositing process may smooth short-term vegetation changes and may not capture every brief decline in vegetation greenness.
+
+- **Climatology sample size:** Each calendar-month climatological mean is based on ten annual observations. A longer study period would provide more observations for estimating the average seasonal pattern.
+
+- **Temporal autocorrelation:** The Pearson correlation p-values do not account for temporal autocorrelation in monthly observations. This may affect the interpretation of statistical significance.
+
+- **Multiple comparisons:** Bonferroni correction was applied to the primary anomaly correlations and lagged comparisons, but the analysis remains exploratory.
+
+- **Spatial aggregation:** Regional mean values may conceal local differences in vegetation, rainfall, and soil moisture within the two LGAs.
+
+- **Causation:** Correlation does not establish causation. The observed relationships should not be interpreted as proof that rainfall or soil moisture directly caused changes in NDVI.
+
+## **10. Conclusion**
 
 This project examined vegetation dynamics and their relationships with rainfall and soil moisture in Akure North and Akure South, Ondo State, from 2016 to 2025.
 
@@ -239,9 +261,9 @@ The raw monthly analysis showed strong positive correlations among NDVI, rainfal
 
 The anomaly analysis revealed weak positive relationships between NDVI and rainfall anomalies and between NDVI and soil moisture anomalies. None of the three primary anomaly correlations passed the Bonferroni-adjusted significance threshold.
 
-The exploratory lagged analysis identified a positive one-month rainfall relationship with NDVI anomalies, but this result also did not pass the adjusted threshold for multiple comparisons.
+The exploratory lagged analysis identified a weak positive one-month rainfall association with NDVI anomalies, but this result also did not pass the adjusted threshold for multiple comparisons.
 
-Overall, the findings demonstrate the importance of accounting for seasonality when examining relationships between vegetation conditions and climatic variables using long-term satellite and reanalysis datasets.
+Overall, the findings illustrate the importance of accounting for seasonality when examining relationships between vegetation conditions and climatic variables using long-term satellite and reanalysis datasets.
 
 ## 11. Project Outputs and Reproducibility
 
