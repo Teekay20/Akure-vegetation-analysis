@@ -21,7 +21,7 @@ The analysis was conducted using Google Earth Engine (GEE), with additional stat
 - Monthly mean NDVI was lowest in February (approximately 0.444) and highest in July (approximately 0.761).
 
 - Rainfall showed relatively high monthly values in June and September, with a decline in July and August.
-- 
+  
 ## 2. Study Area
 
 The study covers two Local Government Areas (LGAs) in Ondo State, southwestern Nigeria:
