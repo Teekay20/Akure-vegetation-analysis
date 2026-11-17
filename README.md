@@ -194,7 +194,7 @@ All three anomaly correlations were positive but weak.
 
 None passed the Bonferroni-adjusted significance threshold of 0.01667.
 
-### 7.4 Lagged Anomaly Correlations
+### 7.5 Lagged Anomaly Correlations
 
 The lagged analysis produced the following results.
 
